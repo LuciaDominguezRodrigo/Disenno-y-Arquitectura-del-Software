@@ -4,11 +4,11 @@
 * Deciders: 2
 * Date: 2023-10-19
 
-Technical Story: RF-1, RF-1.2
+Technical Story: RF-1, RF-1.2, RF-13
 
 ## Context and Problem Statement
 
-Se requiere un sistema con aruitectura orientada a microservicios, que sea flexible, modular y fácilmente expandible. ¿Qué tipo de arquitectura sería la más adecuada?
+Se requiere un sistema con arquitectura orientada a microservicios, que sea flexible, modular y fácilmente expandible. ¿Qué tipo de arquitectura sería la más adecuada?
 
 ## Decision Drivers
 
@@ -37,3 +37,4 @@ Chosen option: "Arquitectura basada en microservicios", because se adapta mejor 
 * Mayor congestión y latencia del sistema
 * Riesgo de integridad de los datos
 * Mayor riesgo de caída del sistema
+* Mayor cantidad de recursos utilizados
