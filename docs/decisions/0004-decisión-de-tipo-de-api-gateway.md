@@ -25,6 +25,7 @@ Chosen option: "Kong"
 * Buena respuesta ante alta demanda de tráfico
 * Altamente escalable por gran cantidad de librerías
 * Adecuado para incorporación de contenedores de microservicios
+* Seguridad mediante certificados SSL
 
 ### Negative Consequences
 

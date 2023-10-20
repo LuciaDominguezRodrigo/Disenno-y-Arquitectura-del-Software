@@ -15,17 +15,18 @@ Es necesario un sistema capaz de notificar las incidencias, las rutas a seguir p
 * AMQP, MQTT, STOMP (Sistema publicación-suscripción)
 * Apache Kafka
 * WNS, Google GCM, AWS SNS (servicio de notificación)
+* RabbitMQ
 
 ## Decision Outcome
 
-Chosen option: "Apache Kafka", because comes out best.
+Chosen option: "RabbitMQ", because opción más conveniente que las demás
 
 ### Positive Consequences
 
-* Simple con plataformas estandarizadas
-* Buaba abstracción
+* Posibilidad de priorizar mensajes
+* Presencia de librerías estándar
 
 ### Negative Consequences
 
-* Incremento de dependencias
-* Mayor complejidad con jerarquías
+* Menor rendimiento
+* Menor abstracción

@@ -12,22 +12,23 @@ Si las aplicaciones móviles y web requieren respuestas ligeramente diferentes (
 
 ## Decision Drivers
 
-* Es innecesario duplicar componentes software cuando los datos son muy similares
+* Mejor capacidad de tratamiento de datos
+* Menores brechas de seguridad en el sistema
 
 ## Considered Options
 
-* Duplicación de API Gateways (una para app movil y otra para app web)
+* Presencia de dos API Gateways (una para app movil y otra para app web) comunicadas mediante un patrón Backend for Frontend
 * Utilización de patrones de adaptación de datos
 
 ## Decision Outcome
 
-Chosen option: "Utilización de patrones de adaptación de datos", because es más eficiente y correcto
+Chosen option: "Presencia de dos API Gateways (una para app movil y otra para app web) comunicadas mediante un patrón Backend for Frontend", because se considera importante la seguridad y la transferencia fiable de datos
 
 ### Positive Consequences
 
-* Evitar redundancia de componentes
-* Evitar redundancias de datos
+* Mayor resistencia frente a brechas de seguridad
+* Mayor capacidad de manejo de datos
 
 ### Negative Consequences
 
-* Necesidad de transformar los datos de una vista a otra
+* Posible redundancia de datos

@@ -12,24 +12,27 @@ Puesto que se gestionan datos en tiempo real dentro de la aplicación, el sistem
 
 ## Decision Drivers
 
-* Es posible unificar la comunicación entre 2 microservicios y entre un microservicio y la API
+* Puntos positivos relevantes de lado de ambas alternativas
+* Posibilidad de adaptación de la comunicación entre ambos protocolos
 
 ## Considered Options
 
 * HTTP/REST
 * gRPC
 * WebSockets
+* Protocolo mixto, usando gRPC en comunicaciones entre microservicios que requieran menor latencia y mayor velocidad de comunicación (es decir, las involucradas con el módulo GestorPedidos) y HTTP/REST en el resto de comunicaciones
 
 ## Decision Outcome
 
-Chosen option: "gRPC", because proporciona una comunicación mucho más rápida entre microservicios, necesarias para el envío y recepción de datos en tiempo real
+Chosen option: "Protocolo mixto, usando gRPC en comunicaciones entre microservicios que requieran menor latencia y mayor velocidad de comunicación (es decir, las involucradas con el módulo GestorPedidos) y HTTP/REST en el resto de comunicaciones", because proporciona una comunicación mucho más rápida entre microservicios, necesarias para el envío y recepción de datos en tiempo real, sin perder la sencillez, los estándares de seguridad y la comunicación asíncrona
 
 ### Positive Consequences
 
-* Mayor rapidez en la comunicación al ser compatible con streaming de datos
-* Interoperabilidad al ser independiente del lenguaje de programación utilizado
+* Posibilidad de transmisión de datos en streaming mediante gRPC
+* Comunicación asíncrona mediante HTTP/REST
+* Sistema más sencillo de mantener y operar
 
 ### Negative Consequences
 
-* Consumo de muchos recursos del sistema
-* Complejidad del protocolo
+* Falta de unificación de protocolos
+* Falta de interoperabilidad nativa entre ambos protocolos
