@@ -18,18 +18,18 @@ Es necesario un algoritmo que redireccione los camiones en caso de avería. ¿Cu
 
 * K-Means
 * DBSCAN
+* VRPTW
 
 ## Decision Outcome
 
-Chosen option: "DBSCAN", because comes out best.
+Chosen option: "VRPTW", because comes out best.
 
 ### Positive Consequences
 
-* No necesita conocer el número de flotas inicial
-* Capacidad para redirigir puntos lejanos
-* Mayor velocidad de cálculo
+* Numerosas herramientas disponibles
+* Algoritmo bien estudiado
+* Eficiente
 
 ### Negative Consequences
 
-* Menos eficiente
-* Más pesado y costoso
+* Funcionamiento costoso

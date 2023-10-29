@@ -18,16 +18,18 @@ Se requieren 2 algoritmos de optimización de rutas y flotas de camiones. ¿Qué
 
 * Enrutamiento en tiempo real y Redireccionamiento Dinámico
 * Enrutamiento en tiempo real y Enrutamiento programado
+* Algoritmos genéticos y Enrutamiento en tiempo real
 
 ## Decision Outcome
 
-Chosen option: "Enrutamiento en tiempo real y Redireccionamiento Dinámico", because comes out best.
+Chosen option: "Algoritmos genéticos y Enrutamiento en tiempo real", because comes out best.
 
 ### Positive Consequences
 
 * Mejor respuesta ante averías de camiones
 * Menor planificación y dependencia
 * Capacidad de detección y solución de averías
+* Posibilidad de tratamiento de paquetes prioritarios
 
 ### Negative Consequences
 

@@ -1,6 +1,7 @@
 # Necesidad de incremento en seguridad de datos en tiempo real
 
 * Status: accepted
+* Deciders: 2
 * Date: 2023-10-28
 
 Technical Story: RF-2

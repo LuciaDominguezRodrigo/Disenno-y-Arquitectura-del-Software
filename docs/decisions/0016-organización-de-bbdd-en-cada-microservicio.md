@@ -1,6 +1,7 @@
 # Organización de BBDD en cada microservicio
 
 * Status: accepted
+* Deciders: 2
 * Date: 2023-10-28
 
 Technical Story: RF-3, RF-12
@@ -12,6 +13,9 @@ Se necesita definir una oorganización de BBDD que soporte el gran flujo de dato
 ## Decision Drivers
 
 * Posibilidad de salvaguardar la información con más necesidad de persistencia en una BBDD más segura y con menos tráfico
+* Posibilidad de utilización de patrón de acceso CQRS, que divide las solicitudes entre comandos y lecturas, accediendo a las BBDD únicamente con permisos de lectura o escritura
+* Posibilidad de implementación de "pool" de conexiones que reutilice las conexiones ya abiertas con las BBDD
+* Posibilidad de incorporación de espacio de memoria de rápido acceso dedicado al almacenamiento de las consultas más frecuentes, para agilizar y ahorrar las consultas a las BBDD
 
 ## Considered Options
 

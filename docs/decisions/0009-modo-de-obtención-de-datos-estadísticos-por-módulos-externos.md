@@ -18,10 +18,11 @@ El componente Estadísticas de la arquitectura recoge datos de diversas fuentes 
 
 * A través del módulo Estadísticas mediante una API propia, mediante peticiones
 * Mediante la recogida de los datos relevantes para los módulos
+* A través del módulo Estasdísticas mediante la combinación de una API propia y WebSockets
 
 ## Decision Outcome
 
-Chosen option: "A través del módulo Estadísticas mediante una API propia, mediante peticiones", because comes out best.
+Chosen option: "A través del módulo Estasdísticas mediante la combinación de una API propia y WebSockets", because comes out best.
 
 ### Positive Consequences
 
@@ -31,3 +32,4 @@ Chosen option: "A través del módulo Estadísticas mediante una API propia, med
 ### Negative Consequences
 
 * Necesidad de hacer peticiones constantemente
+* Las conexiones se mantienen abiertas
