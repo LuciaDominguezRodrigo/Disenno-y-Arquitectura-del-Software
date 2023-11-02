@@ -1,6 +1,7 @@
 # Conexión con pasarela de pago de terceros
 
-* Status: proposed
+* Status: accepted
+* Deciders: Blas, Marcos
 * Date: 2023-10-31
 
 Technical Story: RF-9
@@ -15,9 +16,16 @@ Se requiere decidir una plataforma de terceros que permita realizar pagos de ter
 * Incrementar la seguridad del inicio de sesión
 * Evitar abusos de creación de múltiples cuentas
 
+## Considered Options
+
+* Componente realización de terceros Redsys
+* Componente realización de terceros Niubiz
+* Componente realización de terceros 2checkout
+* Componente realización de cargos personalizado
+
 ## Decision Outcome
 
-Chosen option: "", because comes out best.
+Chosen option: "Componente realización de terceros Redsys", because comes out best.
 
 ### Positive Consequences
 

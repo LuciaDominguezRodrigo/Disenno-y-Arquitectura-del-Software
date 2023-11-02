@@ -1,6 +1,7 @@
 # Modo de alojamiento de los microservicios
 
-* Status: proposed
+* Status: accepted
+* Deciders: Blas, Marcos
 * Date: 2023-10-31
 
 Technical Story: RF-1, RF-1.2,

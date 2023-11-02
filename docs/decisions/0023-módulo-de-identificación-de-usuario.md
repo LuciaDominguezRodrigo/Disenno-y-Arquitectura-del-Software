@@ -1,4 +1,4 @@
-# Acceso a módulo pedidos
+# Módulo de identificación de usuario
 
 * Status: proposed
 * Date: 2023-11-02
