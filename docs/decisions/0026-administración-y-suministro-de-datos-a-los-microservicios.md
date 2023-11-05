@@ -1,6 +1,7 @@
 # Administración y suministro de datos a los microservicios
 
-* Status: proposed
+* Status: accepted
+* Deciders: Marcos, Blas
 * Date: 2023-11-02
 
 Technical Story: RF-3
@@ -11,27 +12,35 @@ Dada la complicación que supondría dar acceso libre a las BBDD a todos los mic
 
 ## Decision Drivers
 
-* Simplificación del proceso de obtención de daos
+* Simplificación del proceso de obtención de datos
+* Necesidad de frecuente actualización para garantización de ultimidad de los datos
+* Posibilidad de actualización de los datos para su corrección
+
 
 ## Considered Options
 
-* Utilización de un patrón Proxy
-* Componente administrador de peticiones SQL con patrón Facade
+* Peticiones periódicas de obtención de los datos a la Base de datos mediante la utilización de un patrón Proxy
+* Peticiones periódicas de obtención de los datos a la Base de datos mediante un componente administrador de peticiones SQL con patrón Facade
+* Peticiones ocasionales en situaciones de necesidad de obtención de datos a la Base de datos mediante la utilización de un patrón Proxy
+* Peticiones ocasionales en situaciones de necesidad de obtención de datos a la Base de datos mediante la utilización de un componente administrador de peticiones SQL con patrón Facade
 
 ## Decision Outcome
 
-Chosen option: "Componente administrador de peticiones SQL con patrón Facade", because comes out best.
+Chosen option: "Peticiones ocasionales en situaciones de necesidad de obtención de los datos de los clientes a la Base de datos mediante la utilización de un componente administrador de peticiones SQL con patrón Facade", because comes out best.
 
 ### Positive Consequences
 
-* Menos complejidad en el acceso a las BBDD
-* Más seguridad de los datos
-* Control sobre cambios en los datos
+* Más control sobre cambios en los datos
+* Menor latencia con menos peticiones
+* Seguridad de veridicidad de los datos
+* Fácil acceso y edición/modificación
 
 ### Negative Consequences
 
 * Menor modularidad
 * Mayor nivel de dependencia entre clases
+* Posibles pérdidas de datos
+* Ineficaz organización y filtración de los datos
 
 ## Pros and Cons of the Options
 

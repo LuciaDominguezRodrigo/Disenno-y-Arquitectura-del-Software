@@ -1,6 +1,6 @@
 # Acceso desde el móvil
 
-* Status: proposed
+* Status: rejected
 * Date: 2023-10-31
 
 Technical Story: RF-1.1

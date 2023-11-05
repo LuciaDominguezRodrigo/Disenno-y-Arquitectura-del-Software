@@ -1,6 +1,7 @@
 # Comunicación entre componentes Reparto y Rutas
 
-* Status: proposed
+* Status: accepted
+* Deciders: Marcos, Blas
 * Date: 2023-11-02
 
 Technical Story: RF-11

@@ -1,9 +1,10 @@
 # Módulo de identificación de usuario
 
-* Status: proposed
+* Status: accepted
+* Deciders: Blas, Marcos
 * Date: 2023-11-02
 
-Technical Story: RF-5
+Technical Story: RF-4, RF-5
 
 ## Context and Problem Statement
 
@@ -11,14 +12,18 @@ Se necesita permitir a un cliente el acceso a un componente controlado de pedido
 
 ## Decision Drivers
 
-* Posibilidad de controlar los pedidos por usuario por medio de autenticación
 * Necesidad de conexión con módulo de estadísticas para obtener información
+* Posibilidad de implementación de un patrón Factory con una clase validadora que identifique al usuario mediante su contraseña y su teléfono móvil
+* Posibilidad de implementación de un patrón Cadena de Responsabilidad que deje acceder al usuario al sistema dependiendo de los permisos que tenga concedidos.
+* Permite la limitación de pedidos de ese usuario a un número determinado de intentos
+* Posibilidad de proteger la seguridad de las cuentas frente a accesos no autorizados en caso de brechas de seguridad
+* Permite la seguridad del inicio de sesión
 
 ## Considered Options
 
-* Acceso por credenciales
-* Acceso por autencitación
-* Acceso por credenciales y posterior verificación y autenticación para la identificación que permita la limitación de pedidos
+* Acceso por credenciales (contaseña)
+* Acceso por auteticación (teléfono móvil)
+* Acceso por credenciales mediante contraseña y posterior verificación mediante teléfono móvil 
 
 ## Decision Outcome
 
@@ -33,4 +38,6 @@ Chosen option: "Acceso por credenciales y posterior verificación y autenticaci�
 ### Negative Consequences
 
 * Alta dependencia del correcto funcionamiento del sistema
-* Posibles caídas del sistema ante frecuentes peticiones
+* Mayor tiempo de inicio de sesión
+* Mayor complejidad para recuperar una cuenta
+

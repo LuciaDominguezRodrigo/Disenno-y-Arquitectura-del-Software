@@ -1,6 +1,6 @@
 # Autenticación 2FA
 
-* Status: proposed
+* Status: rejected
 * Date: 2023-10-31
 
 Technical Story: RF-4

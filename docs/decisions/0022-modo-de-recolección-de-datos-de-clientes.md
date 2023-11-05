@@ -1,6 +1,6 @@
 # Modo de recolección de datos de clientes
 
-* Status: proposed
+* Status: rejected
 * Date: 2023-11-02
 
 Technical Story: RF-4
