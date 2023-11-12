@@ -4,7 +4,7 @@
 * Deciders: 1
 * Date: 2023-10-19
 
-Technical Story: RF-3, RF-12
+Technical Story: RF-3
 
 ## Context and Problem Statement
 

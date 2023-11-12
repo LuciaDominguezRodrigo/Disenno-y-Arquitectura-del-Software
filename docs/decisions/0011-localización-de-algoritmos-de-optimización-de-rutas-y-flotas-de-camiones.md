@@ -4,7 +4,7 @@
 * Deciders: 2
 * Date: 2023-10-28
 
-Technical Story: RF-5, RF-6
+Technical Story: RF-6
 
 ## Context and Problem Statement
 

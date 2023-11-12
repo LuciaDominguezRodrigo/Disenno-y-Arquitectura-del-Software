@@ -4,7 +4,7 @@
 * Deciders: Blas, Marcos
 * Date: 2023-11-02
 
-Technical Story: RF-4, RF-5
+Technical Story: RF-5
 
 ## Context and Problem Statement
 
